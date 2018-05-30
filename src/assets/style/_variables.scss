@@ -1,0 +1,17 @@
+@import '_functions.scss';
+$font: 'Quicksand', sans-serif;
+
+$colors: (
+    primary: (
+        base: #3585de,
+        light: lighten(#3585de, 15%),
+        dark: darken(#3585de, 15%),
+        trans: transparentize(#3585de, 0.5)
+    ),
+    secondary: (
+        base: #35e98e,
+        light: lighten(#35e98e, 15%),
+        dark: darken(#35e98e, 15%),
+        trans: transparentize(#35e98e, 0.5)
+    )
+);

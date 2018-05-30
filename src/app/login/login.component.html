@@ -1,0 +1,37 @@
+<div class="container-login">
+  <div class="center">
+    <form class="login-form" #form="ngForm" (submit)="postUser(user)" autocomplete="off">
+      <header class="heading">
+        <h1>Tradeasy</h1>
+        <p>Sem filas, com transparência e eficiência :)</p>
+      </header>
+      <div class="input-form">
+        <input class="field"type="e-mail" placeholder="Digite seu email" [(ngModel)]="user.email" name="email">
+        <label for="nome">E-mail</label>
+      </div>
+      <div class="input-form">
+        <input class="field" type="password" placeholder="Digite sua senha" [(ngModel)]="user.senha" name="senha">
+        <label for="senha">Senha</label>
+      </div>
+      <div class="links">
+        <a data-fancybox data-src="#forgoten-pass" href="javascript:;">Esqueceu a senha?</a>
+        <a href="#">Não é cadastrado? Cadastre-se agora!</a>
+      </div>
+      <footer class="text-center">
+        <button class="button white">Enviar</button>
+      </footer>
+    </form>
+  </div>
+</div>
+<div class="modal-default" style="display: none;" id="forgoten-pass">
+  <header class="header">
+    <h2 class="title">Esqueceu sua senha?</h2>
+    <p>Informe seu e-mail abaixo para que possamos recuperá-lo</p>
+  </header>
+  <form class="form-box">
+    <div class="input-block">
+      <input class="field" type="e-mail" placeholder="Informe seu e-mail">
+    </div>
+    <button class="button primary">Enviar solicitação</button>
+  </form>
+</div>
