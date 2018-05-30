@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './pages/login/login.component';
 import { AuthService } from './providers/auth-service';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { AppRoutingModule } from './/app-routing.module';
+import { CadastroComponent } from './pages/cadastro/cadastro.component';
 
 
 export const firebaseConfig = {
@@ -22,7 +23,8 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
