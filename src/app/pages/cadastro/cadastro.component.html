@@ -1,5 +1,69 @@
-<section class="subscribe-container">
-  <header>
-    
-  </header>
-</section> 
+<div class="container-subscribe">
+  <div class="center">
+    <form class="login-form" #form="ngForm" (submit)="postUser(user)" autocomplete="off">
+      <header class="heading">
+        <h1>Faça seu cadastro</h1>
+        <p>Informe abaixo seus dados e <br/> conecte-se a uma nova experiência:</p>
+      </header>
+      <div class="row">
+        <div class="grid-6">
+          <div class="input-form">
+            <input class="field" type="e-mail" placeholder="Digite seu nome" [(ngModel)]="user.nome" name="nome">
+            <label for="nome">Nome</label>
+          </div>
+        </div>
+        <div class="grid-6">
+          <div class="input-form">
+            <input class="field" type="e-mail" placeholder="Digite seu email" [(ngModel)]="user.email" name="email">
+            <label for="nome">E-mail</label>
+          </div>
+        </div>
+        <div class="grid-6">
+          <div class="input-form">
+            <input class="field" type="date" placeholder="Quando você nasceu ?" [(ngModel)]="user.date" name="date">
+            <label for="nome">Data de Nascimento</label>
+          </div>
+        </div>
+        <div class="grid-6">
+          <div class="input-form">
+            <input class="field" type="text" placeholder="Digite seu telefone" [(ngModel)]="user.tel" name="telefone">
+            <label for="nome">Telefone</label>
+          </div>
+        </div>
+        <div class="grid-6">
+          <div class="input-form">
+            <input class="field" type="number" placeholder="Informe seu CEP" [(ngModel)]="user.cep" name="cep">
+            <label for="nome">CEP</label>
+          </div>
+        </div>
+        <div class="grid-12">
+          <div class="input-form">
+            <input class="field" type="text" placeholder="Digite seu endereço" [(ngModel)]="user.tel" name="telefone">
+            <label for="nome">Endereço</label>
+          </div>
+        </div>
+        <div class="grid-5">
+          <div class="input-form">
+            <input class="field" type="number" placeholder="" [(ngModel)]="user.tel" name="telefone">
+            <label for="nome">Número</label>
+          </div>
+        </div>
+        <div class="grid-5">
+          <div class="input-form">
+            <input class="field" type="text" placeholder="" [(ngModel)]="user.complemento" name="complemento">
+            <label for="complemento">Complemento</label>
+          </div>
+        </div>
+        <div class="grid-12">
+          <div class="input-form checkbox">
+            <input class="field" id="aceito" type="checkbox" placeholder="" [(ngModel)]="user.aceito" name="aceito">
+            <label for="aceito">Desejo receber notificações dos estabelecimentos por e-mail</label>
+          </div>
+        </div>
+      </div>
+      <footer class="text-center">
+        <button class="button white">Enviar</button>
+      </footer>
+    </form>
+  </div>
+</div>

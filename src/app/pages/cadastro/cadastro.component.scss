@@ -1,11 +1,69 @@
 
 @import '../../../assets/style/_variables';
 
-.subscribe-container {
+.container-subscribe {
     background: no-repeat right top color(primary,base);
     min-height: 100vh;
     height: 100%;
     background-size: 65%;
     width: 100%;
     position: relative;
+    padding: 40px 0;
+    .login-form {
+        padding: 35px;
+        color: #fff;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 5% 0 0;
+        position: relative;
+        .heading {
+            line-height: 1.4;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.1);
+            > h1 {
+                text-align: center;
+                font-size: 3em;
+                color: #fff;
+                margin: 5px 0;
+            }
+            > p {
+                font-size: 1em;
+                font-weight: 500;
+                margin: 5px;
+            }
+            .brand {
+                width: 100px;
+                height: auto;
+                margin-bottom: 0;
+            }
+        }
+        .button {
+            width: 100%;
+            margin-top: 25px;
+        }
+        .links {
+            text-align: center;
+            color: white;
+            a, button {
+                color: #fff;
+                opacity: 0.9;
+                background: transparent;
+                text-align: center;
+                border: 0;
+                width: 100%;
+                outline: none;
+                cursor: pointer;
+                font-size: 15px;
+                padding: 10px 0;
+                font-weight: bold;
+                line-height: 12px;
+                display: block;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
